@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Tarea02-2.css">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Roboto?query=roboto">
+    <title>Tarea02.2 Yago Martínez Loureda</title>
+</head>
+<body>
+    <header id="inicio" class ="portada">
+        <h1>El Gnomo gruñón</h1>
+    </header>
+    <main>
+    <section>
+        <nav>
+            <table class ="navbar">
+                <tr>
+                <td><a href="#sobre_nosotros" >Sobre nosotros</a> </td>
+             
+                <td><a href="#galeria" >Galería</a> </td>
+                
+                <td><a href="#reservas">Reservas</a> </td>
+               
+                <td><a href="#menus">Menús</a> </td>
+             
+                <td><a href="#criticas">Críticas</a> </td>
+            
+                <td><a href="#contacto">Contacto</a> </td>
+                </tr>
+            </table>
+        </nav>
+        <div id ="sobre_nosotros">
+            <h2>Sobre nosotros</h2>
+       
+                <p>Hola, bienvenid@ a la página oficial del restaurante el Gnomo gruñón. <br> En esta página encontrarás información actualizada sobre nosotros, nuestro establecimiento y conocer nuestro menú del día por si quieres venir a comer con nosotros. <br> Tenemos comida vegana, vegetariana, comida más cárnica, postres caseros y mucho más. <br> En caso de querer venir, tendrás la opción de reservar desde esta misma página el día y hora en que quieres venir.</p>
+         
+        </div>
+        <div id ="galeria">
+            <h2>Galería</h2>
+            <p> Imágenes:</p>
+            <table class ="imag">
+                <tr>
+                <th><img src="recursos/images/imagen1.jpg" class = "pizza" title = "Pizza vegana" alt="Pizza vegana"></th>
+        
+                <th><img src="recursos/images/imagen2.jpg" class = "ensalada" title ="Ensalada" alt="Ensalada"></th>
+                
+                <th><img src="recursos/images/imagen3.jpg" class = "brocheta" title ="Brochetas" alt="Brochetas"></th>
+            </tr>
+            </table>
+            <p> Vídeo:</p>
+            <video controls>
+                <source src="recursos/videos/video1.mkv" type="video/mkv">
+                <source src="recursos/videos/video1.mp4" type="video/mp4">
+            </video>
+            <p> Audio:</p>
+            <audio controls>
+                <source src="recursos/audios/audio1.ogg"  type="audio/ogg">
+                <source src="recursos/audios/audio1.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        <div id = "reservas">
+            <h2>Reservas</h2>
+            <table class ="reserva">
+                <tr>
+                <td class ="res">
+                <h3 class = "ress">Haga su reserva:</h3>
+                <form method="post" action=" /procesarReserva.html">
+                    <fieldset>
+                            <label for="fecha" style=" width: 50px;">Fecha de reserva:  <input type="date" name="fecha" id="fecha"></label>
+                        <br><br>
+                            <label for ="time"> Introduzca la hora de la reserva: <input type="time" id="time"></label>     
+                        <br><br>
+                            <label for ="number"> Número de comensales:  <input type="number" name="comensales" id="number" min="1" max="8"></label>
+                        <br><br>
+                        
+                            Seleccione la sala dónde desea comer: 
+                            <select name="lista" id="lista">
+                                <option value="selected" >Seleccionar</option>
+                                <option value="Terraza">Terraza</option>
+                                <option value="Interior">Interior</option>
+                            </select>
+                        
+                       <br><br>
+                            <label for = "nombre"> Introduzca el nombre a quién se hace la reserva:  <input type="text" name="nombre" id="nombre" size="10" maxlength="50" placeholder="Nombre"></label>
+                       <br><br>
+                            <label for= "apellido"> Introduzca el nombre a quién se hace la reserva: <input type="text" name="apellido" id="apellido" size="10" maxlength="100" placeholder="Apellidos"></label>
+                       <br><br>
+                            <label for="telefono"> Introduzca un teléfono de contacto: <input type="tel" id="telefono" name="telefono" pattern="[0-9]{3} [0-9]{3} [0-9]{3}" maxlength="9"></label>
+                       <br><br>
+                            <label for="email"> Introduzca un correo de contacto: <input type="email" name="email" id="email" required></label>
+                       <br><br>
+                      
+                             Introduzca el método de pago que prefiera: 
+                            <label class = "efectivo" for ="efectivo"> <input type="radio" name="pago" id="efectivo" checked> Efectivo</label>
+                            <label class = "tarjeta" for ="tarjeta"><input type="radio" name="pago" id="tarjeta"> Tarjeta</label>
+                       
+                       <br><br>
+                            <label for="bono"> Añada (si lo posee) un bono de descuento en pdf: <input type="file" name="adjunto" id="bono" accept=".pdf"/></label>
+                       <br><br>
+                       
+                            Indique si es intolerante a algún tipo de alimento:
+                            <label class = "huevo" for="huevo"> <input type="checkbox" name="comida1" id="huevo" value="huevo">Huevo</label>
+                            <label class = "gluten" for="gluten"><input type="checkbox" name="comida2" id="gluten" value="gluten"> Gluten</label>
+                            <label class = "leche" for="leche"><input type="checkbox" name="comida3" id="leche" value="leche"> Leche</label>
+                        
+                       <br><br>
+                       <label for="enviar"><input type="submit" id="enviar" value="Enviar"> </label>
+                           
+                       <label for="limpiar"><input type="reset" name="limpiar" id="limpiar" value="Borrar"/> </label>
+                     
+                    </fieldset>
+                </form>
+                </td>
+                <td class = "ap">
+                <h3>Horarios de apertura: </h3>
+                <ul> 
+                    <li>Lunes-Viernes: 13:00 - 16:00</li> 
+                    <li>Sábado: 12:00 - 18:00</li> 
+                    <li>Domingo: Cerrado</li> 
+                </ul>
+                </td>
+            </tr>
+            </table>
+        </div>
+        <div id ="menus">
+            <h2>Menús</h2>
+            <h3>Menú del día</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                    <th>MENÚ A</th>
+                    <th>MENÚ B</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>Entrantes</td>
+                    <td>Ensaladilla</td>
+                    <td>Chipirones</td>
+                    </tr>
+                    <tr>
+                    <td>Plato principal</td>
+                    <td>Pizza vegana</td>
+                    <td>Filete con patatas</td>
+                
+                    </tr>
+                    <tr>
+                        <td>Postre</td>
+                        <td>Arroz con leche de soja</td>
+                        <td>Tiramisú</td>
+                    
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Precio</td>
+                        <td>18 €</td>
+                        <td>15 €</td>
+                    </tr>
+                </tfoot>
+              </table>
+              <h3>Nuestros especiales: </h3>
+              <div class ="comida">
+                <ol>
+                    <li>Hamburguesa Veggie</li>
+                    <li>Secreto ibérico</li>
+                    <li>Ensaladilla rusa</li>
+                </ol>
+            </div>
+        </div>
+        <div id ="criticas">
+            <h2>Críticas</h2>
+            <iframe class = "gazteka" src="https://gazteka.com/"  title="Gazteka"></iframe>
+            <iframe class = "piadina" src="https://lapiadinariminese.com/"  title="La Piadina"></iframe>
+        </div>
+        <div id ="contacto">
+            <h2>Contacto</h2>
+            <a href="mailto:contacto@mirestaurante.lmsxi" style="color: pink;" target="_blank">Contacta con nosotros</a> 
+            <h3>Ubicación</h3>
+            <p>Costa Lonxa, 23, 15670 Culleredo, A Coruña</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11611.880752396804!2d-8.3656517!3d43.3148835!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa927697f4030ce8!2sCasa%20Manolo!5e0!3m2!1ses!2ses!4v1666897592825!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    </main>
+    <br><br>
+    <footer>
+        &copy; 2020
+        <a href="#inicio" style="color: pink;">El Gnomo gruñón</a> 
+    </footer>
+</body>
+</html>

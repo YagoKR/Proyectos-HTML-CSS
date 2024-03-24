@@ -1,0 +1,254 @@
+/*Apartado 1*/
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 12pt;
+    line-height: 2;
+}
+/*Apartado 2*/
+a {
+    font-size: 1.5em;
+}
+
+a:link {
+    color: #524e4d;
+    text-decoration: none;
+}
+  
+a:visited {
+    color: #9d9593;
+}
+  
+a:hover {
+    text-decoration: underline;
+}
+/*Apartado 3*/
+nav td::first-letter {
+    color: #da3743;
+}
+/*Apartado 4*/
+h1 {
+    color: white;
+    font-size: 5em;
+    height: 50%;
+    text-align: center;
+}
+/*Apartado 5*/
+h2 {
+    text-indent: 30px;
+    font-style: italic;
+    font-size: 2em;
+}
+/*Apartado 6*/
+h3 {
+    font-size: 1.25em;
+    padding: 3%;
+}
+
+h3.ress {
+    font-size: 1.25em;
+    padding: 3%;
+    border-top: 1.5px solid black;
+    border-bottom: 1.5px solid black;
+}
+/*Apartado 7*/
+p {
+  width: 90%;
+  text-align: justify;
+  font-size: 14pt;
+  line-height: 2;
+  margin: auto;
+}
+/*Apartado 8*/
+#sobre_nosotros > p {
+  height: fit-content;
+  text-align: center;
+  text-transform: uppercase;
+}
+/*Apartado 9*/
+label {
+  font-weight: bold;
+}
+
+label.efectivo, label.tarjeta, label.huevo, label.gluten, label.leche {
+  font-weight: lighter;
+}
+/*Apartado 10*/
+input[type=submit] {
+  text-transform: uppercase;
+  background-color:  #da3743;
+  color: white;
+  font-weight: bold;
+  height: 5vh;
+  border-radius: 3px;
+}
+/*Apartado 11*/
+input[type=reset] {
+  text-transform: uppercase;
+  background-color:  white;
+  color: black;
+  font-weight: bold;
+  height: 5vh;
+  border: 3px solid black;
+}
+/*Apartado 12*/
+li {
+  line-height: 2em;
+}
+/*Apartado 13*/
+#menus table, #menus th, #menus td {
+  border: 1px solid silver;
+  border-collapse: collapse;
+ }
+/*Apartado 14*/
+table {
+  width: 80%;
+  margin: auto;
+}
+ 
+tr {
+  height: 3em;
+  text-align: center;
+}
+
+td:first-child {
+  font-weight: bold;
+}
+
+thead {
+  font-style: italic;
+}
+/*Apartado 15*/
+#menus > .comida{
+  text-align: center;
+  font-style: italic;
+  color: black;
+  font-size: 2em;
+  position:relative;
+  display: block;
+  margin:1em;
+}
+
+#menus > .comida::before{
+  content:"";
+  background-image: url('../recursos/images/imagen5.jpg');
+  opacity:0.5;
+  position:absolute;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+  width:auto;
+  height:auto;
+  z-index:-3;
+  border-radius: 50%;
+}
+
+#menus > .comida > ol {
+  margin: 0;
+  padding: 0;
+  margin-left: 30px;
+  position: relative;
+  z-index: 2;
+}
+/*Apartado 16*/
+#criticas > iframe {
+  height:200px;
+  width:300px;
+ }
+
+ #criticas > .gazteka {
+  margin-left: 5%;
+ }
+
+ #criticas > .piadina {
+  margin-left: 50%;
+ }
+/*Apartado 17*/
+ #contacto > a, #contacto > h3{
+  margin-left: 40%;
+ }
+
+#contacto > iframe {
+  margin-left: 32%;
+ }
+
+#contacto > p {
+  margin-left: 39%;
+ }
+ /*Apartado 18*/
+footer {
+  text-align: center;
+  height: 8vh;
+}
+/*Apartado 19*/
+.portada {
+  background-image: url(../recursos/images/imagen4.jpg);
+  height: 300px;
+  margin-top: 0px;
+  object-fit: cover;
+ }
+ /*Apartado 20*/
+nav{
+  position: fixed;
+  top: 0;
+  z-index: 9;
+  width: 100%;
+  height: 30px;
+  padding: 10px;
+  background-color: white;
+}
+
+.navbar {
+  margin-top: -12px;
+}
+/*Apartado 21*/
+.imag {
+  display: flex;
+  flex-flow: row wrap;
+  height: 50vh;
+  margin-left: 390px;
+}
+
+.imag > th {
+  width: 20px;
+  margin: 10px;
+  height: 33vh;
+  text-align: center;
+}
+
+video, audio {
+  width: 100vw;
+}
+
+.pizza {
+  width: 350px;
+}
+
+.ensalada {
+  width: 350px;
+  height: 423px;
+}
+
+.brocheta {
+  width: 350px;
+  height: 423px;
+}
+/*Apartado 22*/
+.reserva {
+  width: 100vw;
+}
+
+.reserva > .res {
+  width: 70 vw;
+}
+
+.reserva > .ap {
+  width: 30 vw;
+}
+  
+  
+
+
+
+
+
